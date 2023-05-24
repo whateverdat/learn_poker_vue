@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0c3020] font-thin;
+  }
+  .card {
+    @apply bg-white w-[5rem] h-[7rem] rounded-lg shadow-lg m-2 p-1 pointer-events-none;
+  }
+  .hidden-card {
+    @apply border-8 border-sky-800 rounded-lg border-double text-sky-800 font-bold;
+  }
+  .allow-picking {
+    @apply pointer-events-auto cursor-pointer;
+  }
+  .picked-card {
+    @apply opacity-40 cursor-pointer;
+  }
+  .button {
+    @apply bg-red-900 font-extralight px-5 py-2 text-white rounded hover:bg-red-800 shadow-inner shadow-red-800 transition-colors;
+  }
+}
